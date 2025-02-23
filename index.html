@@ -11,28 +11,30 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-content">
-            <div class="logo">
-                <span class="highlight">N</span>yxFerion
-                <!-- Botãozinho pequeno para a loja -->
-                <a href="loja" class="store-btn"> <!-- Removido .html -->
-                    <i class="fas fa-shopping-cart"></i>
-                </a>
-            </div>
-            <div class="nav-items">
-                <li><a href="#home">Início</a></li> <!-- Mantido #home -->
-                <li><a href="#rules">Regras</a></li>
-                <li><a href="#modes">Modos de Jogo</a></li>
-                <li><a href="#connect">Conectar</a></li>
-                <li><a href="loja">Loja</a></li> <!-- Removido .html -->
-                <li><a href="news-server">Notícias do Servidor</a></li> <!-- Adicionado aqui -->
-            </div>
-            <div class="menu-btn">
-                <div class="menu-btn__lines"></div>
-            </div>
+  <nav class="navbar">
+    <div class="nav-container">
+        <!-- Menu à esquerda -->
+        <ul class="nav-items">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#rules">Regras</a></li>
+            <li><a href="#modes">Modos de Jogo</a></li>
+            <li><a href="#connect">Conectar</a></li>
+            <li><a href="news-server">Notícias do Servidor</a></li>
+        </ul>
+
+        <!-- Nome Nyx Ferion ao lado do menu -->
+        <div class="nav-logo">
+            <span class="highlight">N</span>yx Ferion
         </div>
-    </nav>
+
+        <!-- Loja à direita -->
+        <div class="nav-store">
+            <a href="loja">
+                <i class="fas fa-shopping-cart"></i> Loja
+            </a>
+        </div>
+    </div>
+</nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
