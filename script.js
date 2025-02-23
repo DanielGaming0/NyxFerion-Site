@@ -1,8 +1,3 @@
-// Redirecionamento para inicio.html
-if (window.location.pathname !== "/inicio.html") {
-    window.location.href = "inicio.html";
-}
-
 // Initialize AOS
 AOS.init({
     duration: 1000,
