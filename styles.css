@@ -62,9 +62,10 @@ body {
 }
 
 .menu-btn {
-    display: none;
+    display: none; /* Escondido por padrão (visível apenas no mobile) */
     flex-direction: column;
     cursor: pointer;
+    order: -1; /* Move o botão para o início (lado esquerdo) */
 }
 
 .menu-btn__lines {
@@ -77,8 +78,12 @@ body {
 
 /* Responsividade */
 @media (max-width: 768px) {
+    .menu-btn {
+        display: flex; /* Mostra o botão no mobile */
+    }
+
     .nav-items {
-        display: none;
+        display: none; /* Esconde os itens de navegação por padrão */
         flex-direction: column;
         width: 100%;
         background-color: #333;
@@ -88,11 +93,7 @@ body {
     }
 
     .nav-items.active {
-        display: flex;
-    }
-
-    .menu-btn {
-        display: flex;
+        display: flex; /* Mostra os itens de navegação quando o menu está aberto */
     }
 }
 
