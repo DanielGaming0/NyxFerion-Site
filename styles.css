@@ -619,27 +619,27 @@ footer {
         align-items: center;
         justify-content: center;
         gap: 2rem;
-        transform: translateX(100%);
+        transform: translateX(-100%); /* Começa fora da tela, no lado esquerdo */
         transition: all 0.3s ease;
         opacity: 0;
         visibility: hidden;
     }
 
     .nav-items.active {
-        transform: translateX(0);
+        transform: translateX(0); /* Move para a posição original */
         opacity: 1;
         visibility: visible;
     }
 
     .nav-items li {
         opacity: 0;
-        transform: translateX(50px);
+        transform: translateX(-50px); /* Ajuste a direção da animação dos itens */
         transition: all 0.3s ease;
     }
 
     .nav-items.active li {
         opacity: 1;
-        transform: translateX(0);
+        transform: translateX(0); /* Move os itens para a posição original */
     }
 
     .nav-items li:nth-child(1) { transition-delay: 0.1s; }
