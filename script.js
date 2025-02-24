@@ -1,3 +1,11 @@
+// Redireciona URLs inválidas para a página inicial
+const validPaths = ['/', '/index.html', '/about', '/projects', '/contact']; // Adicione aqui os caminhos válidos do seu site
+const currentPath = window.location.pathname;
+
+if (!validPaths.includes(currentPath)) {
+    window.location.href = "/";
+}
+
 // Initialize AOS
 AOS.init({
     duration: 1000,
@@ -57,9 +65,6 @@ window.addEventListener('scroll', () => {
     }
     lastScroll = currentScroll;
 });
-
-// Typing animation (já inicializado no HTML com Typed.js)
-// Removido para evitar duplicação
 
 // Enhanced scroll animations
 window.addEventListener('scroll', () => {
